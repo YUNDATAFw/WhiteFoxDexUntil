@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=21)
-[![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://github.com/your-repo/android-utils)
+[![Version](https://img.shields.io/badge/version-1.1.0-green.svg)](https://github.com/your-repo/android-utils)
 
 一个功能全面、高度实用的 Android 开发辅助工具集，提供了从 UI 定制、系统信息获取、文件管理到数据安全等多个模块的解决方案。
 
