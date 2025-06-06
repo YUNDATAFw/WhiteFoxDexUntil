@@ -384,7 +384,7 @@ cls(dex, "DeviceInfoUtil", class)
 本项目采用 [Apache License 2.0](https://opensource.org/licenses/Apache-2.0) 许可证。
 
 ```
-Copyright 2024 Android Utils Library
+Copyright 2024 飞上蓝天的飞友
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -398,8 +398,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-版权所有 2024 Android Utils Library
-
+版权所有 2024 飞上蓝天的飞友
 根据 Apache 许可证 2.0 版（“许可证”）获得许可;
 除非遵守许可，否则您不得使用此文件。
 您可以在以下网址获取许可证副本
