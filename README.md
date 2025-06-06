@@ -152,6 +152,103 @@ String availableStorage = DeviceInfoUtil.getAvailableStorage();
 int cpuCores = DeviceInfoUtil.getCpuCoreCount();
 ```
 
+### 自定义吐司消息
+
+#### 方法签名与参数说明
+
+1. **简单吐司消息**
+   ```java
+   public static void showToast(Context context, String message)
+   ```
+
+
+• 参数说明：
+
+• `context`：上下文对象，用于创建 Toast。
+
+• `message`：要显示的文本消息。
+
+• 用途：快速显示一个简单的吐司消息，使用默认样式。
+
+
+2. 自定义样式吐司消息
+
+```java
+   public static void showToast(
+       Context context,
+       String message,
+       float textSize,
+       String backgroundColor,
+       float radius,
+       String textColor,
+       int padding
+   )
+   ```
+
+
+• 参数说明：
+
+• `context`：上下文对象，用于创建 Toast。
+
+• `message`：要显示的文本消息。
+
+• `textSize`：文本的字体大小，单位为`sp`。
+
+• `backgroundColor`：吐司背景颜色，使用十六进制颜色值（例如`#ffffff`）。
+
+• `radius`：吐司背景的圆角大小，单位为`dp`。
+
+• `textColor`：文本颜色，使用十六进制颜色值（例如`#000000`）。
+
+• `padding`：吐司内容的内边距，单位为`dp`。
+
+• 用途：显示一个自定义样式的吐司消息，允许用户自定义字体大小、背景颜色、圆角大小、文本颜色和内边距。
+
+
+示例代码
+
+
+完整使用示例
+
+
+```java
+public class MainActivity extends AppCompatActivity {
+    
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        // 显示简单吐司
+        ToastUtil.showToast(this, "这是一个简单的吐司消息");
+        
+        // 显示自定义样式吐司
+        ToastUtil.showToast(
+            this,
+            "这是一个自定义样式的吐司消息",
+            18f,          // 文字大小为 18sp
+            "#3498db",    // 背景颜色为蓝色
+            16f,          // 圆角大小为 16dp
+            "#ffffff",    // 文字颜色为白色
+            16           // 内边距为 16dp
+        );
+    }
+}
+```
+
+
+
+注意事项
+
+• 颜色值：`backgroundColor`和`textColor`参数需要使用十六进制颜色值，例如`#ffffff`表示白色，`#000000`表示黑色。
+
+• 尺寸单位：`textSize`和`radius`的单位分别为`sp`和`dp`，请根据实际需求调整。
+
+• 内边距：`padding`参数的单位为`dp`，用于控制吐司内容的内边距。
+
+```
+
+
 ### 文件选择器
 
 ```java
